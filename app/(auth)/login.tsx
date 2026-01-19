@@ -1,6 +1,6 @@
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Button, KeyboardAvoidingView } from 'react-native'
-import React from 'react'
 import { router } from 'expo-router'
+import React from 'react'
+import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 
 export default function Login() {
 
@@ -102,6 +102,10 @@ export default function Login() {
                     Don't have an account? Sign Up
                 </Text>
             </TouchableOpacity>
+
+            <Text onPress={() => router.push("/shop")}>
+                Shop
+            </Text>
         </View>
     </KeyboardAvoidingView>
   )
